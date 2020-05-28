@@ -7,7 +7,7 @@ class Tanker {
     this.body = Bodies.rectangle(x, y, width, height, options);
     this.width = width;
     this.height = height;
-    this.image= loadImage("assets/tankbody.png"); 
+    
    
     World.add(world, this.body);
     };
@@ -18,7 +18,12 @@ class Tanker {
       push();
       rectMode(CENTER);
       fill("brown");
-      image(this.image,pos.x, pos.y, this.width, this.height);
+      circle(150,430,80);
+     rect(150,470,100,20);
+     rect(150,450,100,20);
+     angleMode(RADIANTS);
+     // arc(50,300,50,PI,0);
+     
      
      
       pop();
